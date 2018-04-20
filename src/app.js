@@ -5,7 +5,7 @@ const PORT = 3000;
 
 app.get('/', (req, res) => {
   res.json({
-    msg: 'Hello world',
+    msg: 'Best practices for Nodejs project structure',
   });
 });
 
