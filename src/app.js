@@ -1,11 +1,13 @@
 import express from 'express';
+import { restRouter } from './api';
 
 const app = express();
 const PORT = 3000;
 
+app.use('/api', restRouter);
 app.get('/', (req, res) => {
   res.json({
-    msg: 'Hello world',
+    msg: 'Nodejs project Structure',
   });
 });
 
